@@ -1,6 +1,5 @@
 
-# 📘 Book Tracker API (Day 1 of API Sprint)
-
+# 📘 Book Tracker API 
 A small, portfolio-ready project that demonstrates **API fundamentals** (CRUD concepts, REST, HTTP, JSON parsing), using the **Google Books API** to search books and save results to CSV.
 
 > Goal is to develop API skills (design, integration, automation, deployment).
