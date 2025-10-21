@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Run main.py (preview table)",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/main.py",
+        "console": "integratedTerminal",
+        "args": ["--q", "atomic habits", "--max", "10"]
+      },
+      {
+        "name": "Run main.py (CSV out)",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/main.py",
+        "console": "integratedTerminal",
+        "args": [
+          "--q", "deep work",
+          "--max", "25",
+          "--out", "data/deep_work.csv",
+          "--no-desc"
+        ],
+        "envFile": "${workspaceFolder}/.env"
+      }
+    ]
+  }
+  

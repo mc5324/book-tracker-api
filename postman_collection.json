@@ -1,0 +1,68 @@
+{
+  "info": {
+    "name": "Book Tracker API \u2013 Google Books",
+    "_postman_id": "d1b5b3b2-1234-4a6c-9f00-abc123def456",
+    "description": "Simple collection to explore Google Books API for the Book Tracker project.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Search Books (GET)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://www.googleapis.com/books/v1/volumes?q={{q}}&maxResults={{maxResults}}&startIndex={{startIndex}}&key={{key}}",
+          "protocol": "https",
+          "host": [
+            "www",
+            "googleapis",
+            "com"
+          ],
+          "path": [
+            "books",
+            "v1",
+            "volumes"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "{{q}}"
+            },
+            {
+              "key": "maxResults",
+              "value": "{{maxResults}}"
+            },
+            {
+              "key": "startIndex",
+              "value": "{{startIndex}}"
+            },
+            {
+              "key": "key",
+              "value": "{{key}}"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "q",
+      "value": "atomic habits"
+    },
+    {
+      "key": "maxResults",
+      "value": "10"
+    },
+    {
+      "key": "startIndex",
+      "value": "0"
+    },
+    {
+      "key": "key",
+      "value": ""
+    }
+  ]
+}
